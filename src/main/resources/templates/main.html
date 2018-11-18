@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:sec="http://www.w3.org/1999/xhtml" xmlns:if="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+</head>
+<body>
+hello spring security
+<br/>
+<sec:authorize access="hasRole('ADMIN')">
+    你好,admin
+</sec:authorize>
+<sec:authorize access="hasRole('USER')">
+    你好,user
+</sec:authorize>
+<br/>
+<a href="/signin?logout">登出</a>
+</body>
+</html>
